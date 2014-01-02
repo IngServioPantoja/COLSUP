@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es" class="html_100">
+<head>
+<meta charset='utf-8'>
+<link rel="stylesheet" href="hojadeestilos.css">
+<link rel="stylesheet" href="css/nav.css">
+<title>COLSUP pagina principal</title>
+<style type="text/css">
+#tabla_index_1 {
+	text-align: left;
+}
+</style>
+</head>
+<script src='http://code.jquery.com/jquery-1.7.2.min.js'></script>
+<script src="http://code.jquery.com/jquery-1.5.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/modernizr.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+window.onload = document.getElementById("oculto_p_tecnicos").style.display="none";
+window.onload = document.getElementById("oculto_p_academicos").style.display="none";
+window.onload = document.getElementById("oculto_c_espesificos").style.display="none";
+window.onload = document.getElementById("oculto_diplomados").style.display="none";
+window.onload = document.getElementById("oculto_c_aplicativos").style.display="none";
+window.onload = document.getElementById("oculto_b_ciclos").style.display="none";
+window.onload = document.getElementById("oculto_r_horarios").style.display="none";
+});
+
+function incorrecto()
+{
+alert("Usuario Y/O Contraseña Incorrectos");	
+}
+</script>
+<body id='bodyindex'>
+<table align="center" class="tabla_2_x_2" id="tabla_index_1">
+<tr>
+<td width="14%"><img id="imagenlogomini"></td>
+<td height="6%" colspan="2">
+   	    
+        <img id="imagenlogo"></td>
+  </tr>
+    <tr style="text-align: center">
+      <td height="5%" colspan="7" align="left" style="text-align: center" id="tr_inset">
+      <nav id="topNav">
+      	  <ul>
+          <li>
+          <a href="index.html" id="titulo_selector_plan">&nbsp;&nbsp;Inicio&nbsp;&nbsp;</a>
+          </li>
+       	  </ul>
+	    </nav>
+          
+      <nav id="topNav">
+      	  <ul>
+          <li>
+          <a href="registro.php" id="titulo_selector_plan" target="internal">Registrarse</a>
+          </li>
+       	  </ul>
+	    </nav>
+      <nav id="topNav">
+      	  <ul>
+          <li>
+          <a href="iniciar_sesion.html" target="internal" id="titulo_selector_plan">Iniciar Sesion</a>
+          </li>
+       	  </ul>
+	    </nav>
+      </td>
+  </tr>
+    <tr>
+      <td width="14%" valign="top" ><table width="100%" border="0">
+      <tr></tr>
+    <tr></tr>
+</table>
+      <table width="100%" border="0" align="center">
+    <tr>
+      <td><a href="http://www.facebook.com/pages/Instituto-Colsup-Pasto/212931692093333" target="_blank"><img src="IMAGENES/facebookicon.png" width="100%" height="120" id="imagen_hover"></a></td>
+    </tr>
+    <tr>
+      <td height="49" id="td_modalidades2">
+      <a href="" target="_blank"><img src="IMAGENES/twitericon.png" width="100%" height="120" id="imagen_hover"></a>
+      </td>
+    </tr>
+  </table>
+     </td>
+      <td width="72%">
+ 
+      			<div id='textoPr'>
+        		<iframe name='internal' src="bienvenidos.html" id='internal'>
+                </iframe>
+        		</div>
+</td>
+    	<td width="14%" valign="top"><table width="100%" border="0" align="center">
+    <tr>
+      <td>
+      <a href="http://www.colsup.edu.co/index.php?option=com_content&view=category&id=38&Itemid=69" target="_blank"><img src="IMAGENES/logocolsupmini2.png" width="100%" height="120" id="imagen_hover"></a>
+      </td>
+    </tr>
+   
+    <tr></tr>
+  </table></td>
+  </tr>
+    <tr>
+      <td valign="top">&nbsp;</td>
+      <td>&nbsp;</td>
+      <td></td>
+    </tr>
+</table>
+</body>
+<script>
+						(function($){
+				var nav = $("#topNav2");
+				nav.find("li").each(function() {
+					if ($(this).find("ul").length > 0) {
+						$("<span>").text("^").appendTo($(this).children(":first"));
+						$(this).mouseenter(function() {
+							$(this).find("ul").stop(true, true).slideDown();
+						});
+						$(this).mouseleave(function() {
+							$(this).find("ul").stop(true, true).slideUp();
+						});
+					}
+				});
+			})(jQuery);
+			
+			(function($){
+				var nav = $("#topNav3");
+				nav.find("li").each(function() {
+					if ($(this).find("ul").length > 0) {
+						$("<span>").text("^").appendTo($(this).children(":first"));
+						$(this).mouseenter(function() {
+							$(this).find("ul").stop(true, true).slideDown();
+						});
+						$(this).mouseleave(function() {
+							$(this).find("ul").stop(true, true).slideUp();
+						});
+					}
+				});
+			})(jQuery);
+			
+$('#td_p_tecnicos').mouseenter(function()
+{$('#oculto_p_tecnicos').fadeIn('slow');
+}).mouseleave(function()
+{$('#oculto_p_tecnicos').fadeOut('slow');
+});
+
+$('#td_p_academicos').mouseenter(function()
+{$('#oculto_p_academicos').fadeIn('slow');
+}).mouseleave(function()
+{$('#oculto_p_academicos').fadeOut('slow');
+});
+
+$('#td_c_espesificos').mouseenter(function()
+{$('#oculto_c_espesificos').fadeIn('slow');
+}).mouseleave(function()
+{$('#oculto_c_espesificos').fadeOut('slow');
+});
+
+$('#td_diplomados').mouseenter(function()
+{$('#oculto_diplomados').fadeIn('slow');
+}).mouseleave(function()
+{$('#oculto_diplomados').fadeOut('slow');
+});
+
+$('#td_c_aplicativos').mouseenter(function()
+{$('#oculto_c_aplicativos').fadeIn('slow');
+}).mouseleave(function()
+{$('#oculto_c_aplicativos').fadeOut('slow');
+});
+
+$('#td_b_ciclos').mouseenter(function()
+{$('#oculto_b_ciclos').fadeIn('slow');
+}).mouseleave(function()
+{$('#oculto_b_ciclos').fadeOut('slow');
+});
+
+$('#td_r_horarios').mouseenter(function()
+{$('#oculto_r_horarios').fadeIn('slow');
+}).mouseleave(function()
+{$('#oculto_r_horarios').fadeOut('slow');
+});
+
+
+		</script>
+</html>
